@@ -1,0 +1,24 @@
+name: ip_camera_manager
+description: IP Camera manager.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0' # SDK versiyonunuz farklı olabilir
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.5+9 # Veya en güncel stabil versiyon
+  image: ^4.1.3    # Veya en güncel stabil versiyon
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  network_info_plus: ^5.0.3
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.1 # Kamera fotoğraflarını geçici kaydetmek için (opsiyonel)
+  flutter_isolate: ^2.0.4 # `compute` yerine daha gelişmiş isolate yönetimi için (opsiyonel, şimdilik compute yeterli)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
